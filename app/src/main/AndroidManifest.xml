@@ -12,6 +12,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Guia5">
         <activity
+            android:name=".Opcion4Activity"
+            android:exported="false"
+            android:label="Activity 4" />
+        <activity
+            android:name=".Opcion3Activity"
+            android:exported="false"
+            android:label="Activity 3" />
+        <activity
+            android:name=".Opcion2Activity"
+            android:exported="false"
+            android:label="Activity 2" />
+        <activity
+            android:name=".Opcion1Activity"
+            android:exported="false"
+            android:label="Activity 1" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

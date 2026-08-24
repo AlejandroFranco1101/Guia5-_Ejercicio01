@@ -1,9 +1,9 @@
 package com.example.guia5
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -30,13 +30,22 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.opcion1 -> {
-                Toast
-                    .makeText(
-                        applicationContext,
-                        "Opcion 1 presionado",
-                        Toast.LENGTH_LONG
-                    )
-                    .show()
+                startActivity(Intent(this, Opcion1Activity::class.java))
+                true
+            }
+
+            R.id.opcion2 -> {
+                startActivity(Intent(this, Opcion2Activity::class.java))
+                true
+            }
+
+            R.id.opcion3 -> {
+                startActivity(Intent(this, Opcion3Activity::class.java))
+                true
+            }
+
+            R.id.opcion4 -> {
+                startActivity(Intent(this, Opcion4Activity::class.java))
                 true
             }
 
